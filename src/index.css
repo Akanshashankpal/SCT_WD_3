@@ -1,0 +1,65 @@
+:root {
+  --night: #10131c;
+  --cream: #f6f1e8;
+  --cream-2: #fffdf8;
+  --ink: #1b1814;
+  --muted: #6f675e;
+  --line: #e4dacd;
+  --violet: #5346e6;
+  --violet-soft: #efeaff;
+  --teal: #0f766e;
+  --teal-soft: #e5f6f3;
+  --coral: #d4533c;
+  --coral-soft: #fdeee9;
+  --gold: #c4841a;
+  --gold-soft: #fbf3e2;
+  --shadow: 0 28px 70px rgba(5, 8, 18, 0.38);
+  font-family: "Outfit", "Segoe UI", sans-serif;
+  color: var(--ink);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  color: var(--cream);
+  background:
+    radial-gradient(900px 480px at -10% -10%, rgba(83, 70, 230, 0.55), transparent 58%),
+    radial-gradient(760px 420px at 110% 0%, rgba(15, 118, 110, 0.42), transparent 52%),
+    radial-gradient(640px 380px at 80% 110%, rgba(212, 83, 60, 0.22), transparent 50%),
+    var(--night);
+}
+
+button,
+input,
+p {
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
